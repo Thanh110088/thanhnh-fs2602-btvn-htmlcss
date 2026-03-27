@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Directory</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="userlistday.css" />
+  </head>
+  <body>
+    <main class="user-directory">
+      <header class="directory-header">
+        <h1>Users</h1>
+
+        <div class="toolbar">
+          <label class="search-box" for="user-search">
+            <svg
+              class="search-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+
+            <input
+              type="search"
+              name="user-search"
+              id="user-search"
+              placeholder="Search users"
+            />
+          </label>
+
+          <nav class="filters" aria-label="User filters">
+            <ul class="filter-list">
+              <li><a href="#reputation" class="filter-link">Reputation</a></li>
+              <li>
+                <a
+                  href="#new-users"
+                  class="filter-link active"
+                  aria-current="page"
+                  >New users</a
+                >
+              </li>
+              <li><a href="#voters" class="filter-link">Voters</a></li>
+              <li><a href="#editors" class="filter-link">Editors</a></li>
+              <li><a href="#moderators" class="filter-link">Moderators</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <ul class="user-list">
+        <li class="user-list-item">
+          <article class="user-card">
+            <div class="user-avatar">
+              <img
+                src="../imges/lelahnichols.png"
+                alt="Lelah Nichols's avatar"
+              />
+            </div>
+            <div class="user-info">
+              <h2>Lelah Nichols</h2>
+              <p class="user-location">Troy, MI</p>
+              <ul class="user-tags" aria-label="User tags">
+                <li class="tag">clothes</li>
+                <li class="tag">stem</li>
+              </ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="user-list-item">
+          <article class="user-card">
+            <div class="user-avatar">
+              <img src="../imges/jesusweiss.png" alt="Jesus Weiss's avatar" />
+            </div>
+            <div class="user-info">
+              <h2>Jesus Weiss</h2>
+              <p class="user-location">Fort Worth, TX</p>
+              <ul class="user-tags" aria-label="User tags">
+                <li class="tag">headset</li>
+                <li class="tag">gadget</li>
+                <li class="tag">speed</li>
+                <li class="tag">winter</li>
+              </ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="user-list-item">
+          <article class="user-card">
+            <div class="user-avatar">
+              <img src="../imges/annierice.png" alt="Annie Rice's avatar" />
+            </div>
+            <div class="user-info">
+              <h2>Annie Rice</h2>
+              <p class="user-location">Austin, TX</p>
+              <ul class="user-tags" aria-label="User tags">
+                <li class="tag">road</li>
+                <li class="tag">mountain</li>
+                <li class="tag">trip</li>
+                <li class="tag">earth</li>
+                <li class="tag">nature</li>
+              </ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="user-list-item">
+          <article class="user-card">
+            <div class="user-avatar">
+              <img
+                src="../imges/robertbrower.png"
+                alt="Robert Brower's avatar"
+              />
+            </div>
+            <div class="user-info">
+              <h2>Robert Brower</h2>
+              <p class="user-location">Cincinnati, OH</p>
+              <ul class="user-tags" aria-label="User tags">
+                <li class="tag">Maintenance</li>
+                <li class="tag">gears</li>
+                <li class="tag">frames</li>
+                <li class="tag">repair</li>
+              </ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="user-list-item">
+          <article class="user-card">
+            <div class="user-avatar">
+              <img src="../imges/amycampbell.png" alt="Amy Campbell's avatar" />
+            </div>
+            <div class="user-info">
+              <h2>Amy Campbell</h2>
+              <p class="user-location">Warrior, AL</p>
+              <ul class="user-tags" aria-label="User tags">
+                <li class="tag">music</li>
+                <li class="tag">disks</li>
+              </ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="user-list-item">
+          <article class="user-card">
+            <div class="user-avatar">
+              <img
+                src="../imges/Anthonysmorin.png"
+                alt="Anthony S. Morin's avatar"
+              />
+            </div>
+            <div class="user-info">
+              <h2>Anthony S. Morin</h2>
+              <p class="user-location">Lyndhurst, NJ</p>
+              <ul class="user-tags" aria-label="User tags">
+                <li class="tag">vintage</li>
+                <li class="tag">electric</li>
+              </ul>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+body {
+  background-color: #dde1f9;
+}
+.navbar-container {
+  margin-top: 100px;
+  position: fixed;
+  padding: 15px;
+  background-color: #fff;
+  max-width: 1255px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  border-radius: 25px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.navbar-main {
+  background-color: #f8f9ff;
+  max-width: 1225px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 148px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 15px;
+  /* padding:45px 40px; */
+
+  .nav-links {
+    display: flex;
+  }
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    > a {
+      padding: 18px 25px;
+    }
+    .btn-signup {
+      background-color: #000;
+      color: #fff;
+      border-radius: 5px;
+    }
+  }
+}
+
+.nav-item {
+  position: relative;
+  padding: 20px 25px;
+  &:hover {
+    border-radius: 15px;
+    outline: 1px solid #dde1f9;
+    background-color: #eff1ff;
+    .mega-menu {
+      display: flex;
+    }
+  }
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 86%;
+  left: 0;
+  justify-content: space-between;
+  gap: 65px;
+  padding: 30px 35px;
+  background-color: #fff;
+  border-radius: 15px;
+  width: max-content;
+  .menu-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .column-title {
+      font-size: 17px;
+      padding: 0 15px;
+      /* white-space: nowrap; */
+      font-weight: 800;
+      text-transform: none;
+      /* height: 41px; */
+    }
+    /* li {
+      height: 41px;
+    } */
+    li:hover {
+      background-color: #f8f9ff;
+      border: none;
+      border-radius: 5px;
+    }
+    a {
+      display: block;
+      padding: 12px 15px;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: none;
+    }
+  }
+}

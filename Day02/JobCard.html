@@ -3,16 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Open Positions</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="jobcard.css" />
   </head>
   <body>
-    <div class="job-card">
-      <h1>Open position</h1>
-      <div class="card-grid flex-center">
-        <div class="card">
-          <div class="card-info flex">
-            <div class="img">
+    <section class="open-positions-section">
+      <h2 class="section-title">Open positions</h2>
+
+      <ul class="categories-grid">
+        <li class="category-card">
+          <header class="category-card-header">
+            <div class="category-card-icon">
               <svg
                 width="32"
                 height="32"
@@ -57,15 +68,14 @@
                 </defs>
               </svg>
             </div>
-            <div class="name-work">
-              <h2>Design</h2>
-            </div>
-          </div>
-          <button class="btn">4 open positions</button>
-        </div>
-        <div class="card">
-          <div class="card-info flex">
-            <div class="img">
+            <h3 class="category-card-title">Design</h3>
+          </header>
+          <a href="#" class="category-card-link btn">4 open positions</a>
+        </li>
+
+        <li class="category-card">
+          <header class="category-card-header">
+            <div class="category-card-icon">
               <svg
                 width="32"
                 height="32"
@@ -103,15 +113,14 @@
                 </defs>
               </svg>
             </div>
-            <div class="name-work">
-              <h2>Engineerging</h2>
-            </div>
-          </div>
-          <button class="btn">8 open positions</button>
-        </div>
-        <div class="card">
-          <div class="card-info flex">
-            <div class="img">
+            <h3 class="category-card-title">Engineering</h3>
+          </header>
+          <a href="#" class="category-card-link btn">8 open positions</a>
+        </li>
+
+        <li class="category-card">
+          <header class="category-card-header">
+            <div class="category-card-icon">
               <svg
                 width="32"
                 height="32"
@@ -142,15 +151,14 @@
                 </defs>
               </svg>
             </div>
-            <div class="name-work">
-              <h2>Operations</h2>
-            </div>
-          </div>
-          <button class="btn">2 open positions</button>
-        </div>
-        <div class="card">
-          <div class="card-info flex">
-            <div class="img">
+            <h3 class="category-card-title">Operations</h3>
+          </header>
+          <a href="#" class="category-card-link btn">2 open positions</a>
+        </li>
+
+        <li class="category-card">
+          <header class="category-card-header">
+            <div class="category-card-icon">
               <svg
                 width="32"
                 height="32"
@@ -195,15 +203,14 @@
                 </defs>
               </svg>
             </div>
-            <div class="name-work">
-              <h2>People</h2>
-            </div>
-          </div>
-          <button class="btn">6 open positions</button>
-        </div>
-        <div class="card">
-          <div class="card-info flex">
-            <div class="img">
+            <h3 class="category-card-title">People</h3>
+          </header>
+          <a href="#" class="category-card-link btn">6 open positions</a>
+        </li>
+
+        <li class="category-card">
+          <header class="category-card-header">
+            <div class="category-card-icon">
               <svg
                 width="32"
                 height="32"
@@ -255,15 +262,14 @@
                 </defs>
               </svg>
             </div>
-            <div class="name-work">
-              <h2>Sales</h2>
-            </div>
-          </div>
-          <button class="btn">7 open positions</button>
-        </div>
-        <div class="card">
-          <div class="card-info flex">
-            <div class="img">
+            <h3 class="category-card-title">Sales</h3>
+          </header>
+          <a href="#" class="category-card-link btn">7 open positions</a>
+        </li>
+
+        <li class="category-card">
+          <header class="category-card-header">
+            <div class="category-card-icon">
               <svg
                 width="31"
                 height="31"
@@ -294,21 +300,20 @@
                 </defs>
               </svg>
             </div>
-            <div class="name-work">
-              <h2>University</h2>
-            </div>
-          </div>
-          <button class="btn">8 open positions</button>
-        </div>
-      </div>
-      <div>
-        <p class="footer-text">
+            <h3 class="category-card-title">University</h3>
+          </header>
+          <a href="#" class="category-card-link btn">8 open positions</a>
+        </li>
+      </ul>
+
+      <footer class="section-footer">
+        <p class="eeo-statement">
           We are proud to be an equal opportunity employer that values
           diversity. We do not discriminate on the basis of race, religion,
           color, national origin, gender, sexual orientation, age, marital
           status, veteran status, or disability status.
         </p>
-      </div>
-    </div>
+      </footer>
+    </section>
   </body>
 </html>
