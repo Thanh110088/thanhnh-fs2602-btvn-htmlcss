@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f1ed; /* Màu nền be nhạt của cả trang */
+  color: #1a1a1a;
+}
+
+.landing-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* ================================
+   1. HEADER GRID (Chia 3 phần)
+================================ */
+.header {
+  display: grid;
+  /* Cột 1 tự fit nội dung (Logo), Cột 2 chiếm phần còn lại (Nav), Cột 3 tự fit (Button) */
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+
+  .logo {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center; /* Căn giữa các link trong cột 1fr */
+    gap: 32px;
+
+    a {
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+
+      &.active {
+        font-weight: 600;
+        color: #1a1a1a;
+        border-bottom: 2px solid #1a1a1a;
+        padding-bottom: 4px;
+      }
+    }
+  }
+
+  .btn-signin {
+    padding: 10px 24px;
+    border: 1px solid #1a1a1a;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}
+
+/* ================================
+   2. HERO GRID (Chia 2 cột bằng nhau)
+================================ */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Chia 2 cột tỷ lệ 1:1 */
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 100px;
+
+  .hero-content {
+    h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #777;
+      margin-bottom: 32px;
+      max-width: 400px;
+    }
+    .btn-start {
+      padding: 14px 32px;
+      background-color: #8cc684; /* Xanh lá */
+      color: #1a1a1a;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: flex-end;
+    .circle-img-placeholder {
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background-color: #e5cdbb; /* Màu nền khối tròn */
+    }
+  }
+}
+
+/* ================================
+   3. BRANDS SECTION
+================================ */
+.brands-section {
+  text-align: center;
+  margin-bottom: 100px;
+
+  p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 24px;
+  }
+
+  .brand-logos {
+    display: flex; /* Phần này dùng flex phân bổ đều sẽ hợp hơn grid */
+    justify-content: center;
+    gap: 48px;
+    color: #888;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+/* ================================
+   4. TEAM GRID (Chia 4 cột)
+================================ */
+.team-section {
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+
+    p {
+      color: #555;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 32px;
+      span {
+        color: #509765;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .team-grid {
+    display: grid;
+    /* CHÌA KHÓA: Tạo 4 cột đều nhau. Nếu màn hình nhỏ đi, có thể dùng auto-fit để tự rớt dòng */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+    .team-card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+
+      .card-img {
+        height: 250px; /* Chiều cao giả định cho phần ảnh */
+        width: 100%;
+      }
+
+      .card-info {
+        padding: 20px;
+        h3 {
+          font-size: 18px;
+          margin-bottom: 4px;
+        }
+        p {
+          font-size: 14px;
+          color: #888;
+        }
+      }
+    }
+  }
+}
+/* .team-card {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .card-img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    flex-shrink: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1;
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #9b948e;
+      font-weight: 400;
+    }
+  }
+} */
+.team-card {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  .card-img {
+    aspect-ratio: 4/5;
+    width: 100%;
+    /* height: 350px; */
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* object-position: center ; */
+    }
+  }
+
+  .card-info {
+    background-color: #fff;
+    padding: 20px;
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 16px;
+      color: #9b948e;
+      font-weight: 300;
+    }
+  }
+}
+.team-card {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+
+  /* SỬ DỤNG CSS GRID THAY CHO FLEXBOX */
+  display: grid;
+
+  /* CÂU THẦN CHÚ THAY THẾ FLEX-GROW: 
+     Chia thẻ thành 2 phần theo chiều dọc:
+     - Phần 1 (auto): Chiều cao tự ôm sát theo độ lớn của ảnh.
+     - Phần 2 (1fr): Dành TOÀN BỘ không gian còn dư lại cho phần nền trắng. */
+  grid-template-rows: auto 1fr;
+
+  .card-img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .card-info {
+    padding: 24px;
+
+    /* KHÔNG CẦN BẤT KỲ LỆNH FLEX NÀO Ở ĐÂY NỮA */
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #9b948e;
+      font-weight: 400;
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+}
