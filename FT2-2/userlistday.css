@@ -87,7 +87,7 @@ body {
   li {
     /* display: flex; */
     list-style: none;
-    flex-basis: 316px;
+    flex-basis: 327px;
   }
 }
 .user-card {
