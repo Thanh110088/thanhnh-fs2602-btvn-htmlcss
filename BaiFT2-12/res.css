@@ -18,6 +18,9 @@ header {
   flex-direction: column;
   align-items: center;
   margin-bottom: 64px;
+  .logo {
+    margin: 32px auto;
+  }
 }
 .navbar-links {
   list-style: none;
