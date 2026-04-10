@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 12px;
+}
+.banner {
+  width: 100%;
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  .nav-item {
+    .nav-link {
+      text-decoration: none;
+      font-size: 20px;
+      color: #000;
+      text-transform: capitalize;
+      font-weight: 700;
+    }
+  }
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+  margin-bottom: 64px;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h2 {
+    background-color: #0e4c67;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    .card-link {
+      display: block;
+      padding: 27px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      width: 100%;
+    }
+  }
+}
+.video {
+  width: 100%;
+  iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+}
+footer {
+  padding: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0e4c67;
+  margin-top: 73px;
+  span {
+    font-size: 24px;
+    color: #fff;
+  }
+  .btn-play {
+    padding: 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ffa800;
+    border: 1px solid #ffa800;
+    border-radius: 5px;
+    font-weight: 800;
+  }
+  .input-footter {
+    font-family: "Montserrat", sans-serif;
+    padding: 16px 26px;
+    border: 2px solid #ffa800;
+    border-radius: 2px;
+    background-color: #0e4c67;
+    margin-right: 23px;
+    &::placeholder {
+      font-weight: 600;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar-links {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .card-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -205,7 +205,6 @@ header {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  grid-template-rows: auto 1fr;
   .card-img {
     aspect-ratio: 4/5;
     width: 100%;
@@ -222,6 +221,7 @@ header {
   .card-info {
     background-color: #ffff;
     padding: 20px;
+    height: 100%;
 
     h3 {
       font-size: 20px;
